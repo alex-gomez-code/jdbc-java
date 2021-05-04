@@ -1,11 +1,12 @@
 package models;
 
 import java.sql.ResultSet;
+import java.util.List;
 
 public interface AnimeEstudioDAO {
     //CRUD
-    public ResultSet selectAllAnimeEstudios();
-    public AnimeEstudio insertAnimeEstudio(int nID, int nCIF);
-    public AnimeEstudio deleteAnimeEstudio(int nID);
-    public AnimeEstudio updateAnimeEstudio(int nID, int nCIF);
+    public List<AnimeEstudio> selectAllAnimeEstudios();
+    public boolean insertAnimeEstudio(int nID, int nCIF);
+    public boolean deleteAnimeEstudio(int nID);
+    public boolean updateAnimeEstudio(int nID, int nCIF);
 }
