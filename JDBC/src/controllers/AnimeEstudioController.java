@@ -14,7 +14,7 @@ public class AnimeEstudioController implements AnimeEstudioDAO {
 
     private final String SELECT_ALL = "SELECT * FROM animeestudio";
     private final String INSERT_INTO = "INSERT INTO AnimeEstudio (nID, nCIF) VALUES (?, ?)";
-    private final String UPDATE = "UPDATE Estudio SET nCIF=? WHERE nID=?";
+    private final String UPDATE = "UPDATE AnimeEstudio SET nCIF=? WHERE nID=?";
     private final String DELETE = "DELETE FROM AnimeEstudio WHERE nID=?";
 
     private Connection conn;
